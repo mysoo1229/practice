@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <meta charset="utf-8">
     <title>MEMO</title>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;700&family=Nunito:wght@300;700&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/memo.css">
@@ -9,7 +10,7 @@
     <div class="wrapper">
 
       <nav>
-        <ul class="navLink"></ul>
+        <ul class="navList"></ul>
         <a href="javascript:void(0)" id="goToTop">TOP</a>
       </nav>
 
@@ -19,9 +20,22 @@
         </div>
 
         <div class="contents">
+          <section id="css">
+            <h2 class="sectionTitle">section</h2>
+            <div class="each" id="example1">
+              <h3>example1</h3>
+              <p class="pText">This is a description.</p>
+            </div>
+            <div class="each" id="example2">
+              <h3>example2</h3>
+            </div>
+          </section>
         </div>
       </main>
 
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="scripts/memo.js"></script>
   </body>
 </html>

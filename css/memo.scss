@@ -1,3 +1,7 @@
+@charset "utf-8";
+
+$myRed: #F0386B;
+
 /* common */
 body,
 h1,
@@ -13,16 +17,94 @@ li {
   color: #222;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  transition: all .3s;
+}
+
+body {
+  background: #ECE8EF;
+}
+
 .wrapper {
+  display: flex;
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 20px 0;
 }
 
+.sectionTitle {
+  display: inline-block;
+  border-bottom: 1px dashed $myRed;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 10px;
+  color: $myRed;
+}
+
+/* nav */
+nav {
+  position: relative;
+  padding-top: 90px;
+
+  .navList {
+    padding: 30px 30px 10px;
+    background-color: #fff;
+
+    .navItem {
+      display: block;
+      margin-bottom: 20px;
+      list-style: none;
+
+      a:hover {
+        color: #000;
+        border-bottom-color: #23241f;
+      }
+    }
+  }
+
+  .navSubList {
+    margin-top: 10px;
+
+    li {
+      a {
+        padding: 5px 0 5px 12px;
+        font-size: 14px;
+        line-height: 14px;
+
+        &:hover {
+          color: $myRed;
+        }
+      }
+    }
+  }
+
+  #goToTop {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -50px;
+    padding: 10px 0;
+    text-align: right;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 /* main */
-body {
-  background: #ECE8EF;
+main {
+  position: relative;
+  width: 100%;
 }
 
 .title {
@@ -32,5 +114,34 @@ body {
     padding: 20px 0;
     text-align: center;
     font-size: 12px;
+  }
+}
+
+.contents {
+  padding: 30px 0 30px 30px;
+}
+
+section {
+  padding: 30px 30px 40px;
+  margin-bottom: 60px;
+  background: #fff;
+
+  .sectionTitle {
+    margin-bottom: 30px;
+  }
+
+  .each {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: none;
+    }
+  }
+
+  .pText {
+    margin: 5px 0;
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+    line-height: 1.6;
   }
 }
