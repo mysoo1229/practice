@@ -21,17 +21,65 @@
 
         <div class="contents">
           <section id="css">
-            <h2 class="sectionTitle">section</h2>
-            <div class="each" id="example1">
-              <h3>example1</h3>
-              <p class="pText">This is a description.</p>
+            <h2 class="sectionTitle">css</h2>
+
+            <div class="each" id="sronly">
+              <h3>sr only</h3>
               <pre><code>
-                  example code
+                  position: absolute;
+                  width: 1px;
+                  height: 1px;
+                  margin: -1px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  clip: rect(0 0 0 0);
               </code></pre>
             </div>
-            <div class="each" id="example2">
-              <h3>example2</h3>
+
+            <div class="each" id="ellipsis">
+              <h3>text ellipsis</h3>
+              <p class="pText">a.k.a line-clamp / truncate</p>
+              <pre><code>
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                <span class="g">/* 여러줄 이상 cut */</span>
+                display: -webkit-box;
+                height: $line*$val;
+                overflow: hidden;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: $val;
+                -webkit-box-orient: vertical;
+                line-height: $line;
+              </code></pre>
             </div>
+
+            <div class="each" id="whiteSpace">
+              <h3>white-space</h3>
+              <p class="pText">how to deal with empty space</p>
+              <pre><code>
+                  white-space: normal;&nbsp;&nbsp;&nbsp;<span class="g">// no br, no multi space, only wrap</span>
+                  white-space: nowrap;&nbsp;&nbsp;&nbsp;<span class="g">// no br, no multi space, NO wrap</span>
+                  white-space: pre; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="g">// yes br, yes multi space, but NO wrap</span>
+                  white-space: pre-line; <span class="g">// yes br, yes wrap, but NO multi space</span>
+                  white-space: pre-wrap; <span class="g">// yes br, yes wrap, yes space</span>
+              </code></pre>
+            </div>
+
+            <div class="each" id="imemode">
+              <h3>ime-mode</h3>
+              <p class="pText">to control input language. *IME = Input Method Editor<br>
+              But avoid using it, as it may be removed from web standards.</p>
+              <pre><code>
+                ime-mode: auto; <span class="g">//한영 모드</span>
+                ime-mode: active; <span class="g">//기본: 한글 (예:우편번호)</span>
+                ime-mode: inactive; <span class="g">//기본: 영어</span>
+                ime-mode: disabled; <span class="g">//한글 불가 - 영문만 입력 가능 (예:ID,PW)</span>
+              </code></pre>
+            </div>
+
           </section>
         </div>
       </main>
