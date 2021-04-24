@@ -126,6 +126,10 @@ section {
   margin-bottom: 60px;
   background: #fff;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   .sectionTitle {
     margin-bottom: 30px;
   }
@@ -134,7 +138,7 @@ section {
     margin-bottom: 30px;
 
     &:last-child {
-      margin-bottom: none;
+      margin-bottom: 0;
     }
   }
 
@@ -148,6 +152,7 @@ section {
 
 /*highlight js*/
 pre {
+  margin-bottom: 0;
   white-space: pre-line;
   background-color: #232323;
 }

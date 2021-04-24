@@ -124,6 +124,10 @@ section {
   background: #fff;
 }
 
+section:last-child {
+  margin-bottom: 0;
+}
+
 section .sectionTitle {
   margin-bottom: 30px;
 }
@@ -133,7 +137,7 @@ section .each {
 }
 
 section .each:last-child {
-  margin-bottom: none;
+  margin-bottom: 0;
 }
 
 section .pText {
@@ -145,6 +149,7 @@ section .pText {
 
 /*highlight js*/
 pre {
+  margin-bottom: 0;
   white-space: pre-line;
   background-color: #232323;
 }
