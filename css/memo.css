@@ -235,8 +235,7 @@ pre {
   color: #dcdcaa;
 }
 
-span.g,
-span[class*="hljs-"],
+span.g span[class*="hljs-"],
 .hljs-comment {
   color: #6a9955;
 }
