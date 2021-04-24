@@ -80,6 +80,37 @@
               </code></pre>
             </div>
 
+            <div class="each" id="variables">
+              <h3>variables</h3>
+              <p class="pText">how to use variables in scss</p>
+              <pre><code>
+                <span class="g">//before</span>
+                .time14 {
+                &nbsp;&nbsp;&.selected:after {
+                &nbsp;&nbsp;&nbsp;&nbsp;background: url("#{$base-url}/date_selected14.png");
+                &nbsp;&nbsp;}
+                }
+
+                .time20 {
+                &nbsp;&nbsp;&.selected:after {
+                &nbsp;&nbsp;&nbsp;&nbsp;background: url("#{$base-url}/date_selected14.png");
+                &nbsp;&nbsp;}
+                }
+
+                <span class="g">//after</span>
+                .time {
+                &nbsp;&nbsp;$timeData: (14, 20);
+
+                &nbsp;&nbsp;@each $myTime in $timeData {
+                &nbsp;&nbsp;&nbsp;&nbsp;&#{$time} {
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.selected:after {
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: url("#{$base-url}/date_selected#{$myTime}.png");
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                &nbsp;&nbsp;&nbsp;&nbsp;}
+                &nbsp;&nbsp;}
+                }
+              </code></pre>
+            </div>
           </section>
         </div>
       </main>
