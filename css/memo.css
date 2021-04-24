@@ -1,0 +1,145 @@
+/* common */
+body,
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+  font-family: "Nunito", "Gothic A1";
+  padding: 0;
+  margin: 0;
+  color: #222;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body {
+  background: #ECE8EF;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px 0;
+}
+
+.sectionTitle {
+  display: inline-block;
+  border-bottom: 1px dashed #F0386B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #F0386B;
+}
+
+/* nav */
+nav {
+  position: relative;
+  padding-top: 90px;
+}
+
+nav .navList {
+  padding: 30px 30px 10px;
+  background-color: #fff;
+}
+
+nav .navList .navItem {
+  display: block;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+nav .navList .navItem a:hover {
+  color: #000;
+  border-bottom-color: #23241f;
+}
+
+nav .navSubList {
+  margin-top: 10px;
+}
+
+nav .navSubList li a {
+  padding: 5px 0 5px 12px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+nav .navSubList li a:hover {
+  color: #F0386B;
+}
+
+nav #goToTop {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: -50px;
+  padding: 10px 0;
+  text-align: right;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* main */
+main {
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  height: 60px;
+}
+
+.title h1 {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.contents {
+  padding: 30px 0 30px 30px;
+}
+
+section {
+  padding: 30px 30px 40px;
+  margin-bottom: 60px;
+  background: #fff;
+}
+
+section .sectionTitle {
+  margin-bottom: 30px;
+}
+
+section .each {
+  margin-bottom: 30px;
+}
+
+section .each:last-child {
+  margin-bottom: none;
+}
+
+section .pText {
+  margin: 5px 0;
+  padding-left: 10px;
+  border-left: 1px solid #ccc;
+  line-height: 1.6;
+}
+/*# sourceMappingURL=memo.css.map */
