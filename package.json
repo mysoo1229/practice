@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "퍼블리싱과 관련된 팁 메모",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysoo1229/practice.git"
+  },
+  "author": "Crystal Yoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mysoo1229/practice/issues"
+  },
+  "homepage": "https://github.com/mysoo1229/practice#readme"
+}
