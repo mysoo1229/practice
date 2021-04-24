@@ -51,8 +51,12 @@ body {
 
 /* nav */
 nav {
-  position: relative;
+  min-width: 150px;
   padding-top: 90px;
+}
+
+nav .navWrap {
+  position: relative;
 }
 
 nav .navList {
