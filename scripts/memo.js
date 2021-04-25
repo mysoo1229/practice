@@ -23,7 +23,7 @@ $(function() {
       var navSubHref = $(this).parent().attr('id');
   
       $('.navList .link' + navId).siblings('.navSubList').append(
-        '<li><a href="#'
+        '<li class="navSubItem"><a href="#'
         + navSubHref
         + '">'
         + navSubTxt

@@ -79,13 +79,13 @@ nav .navSubList {
   margin-top: 10px;
 }
 
-nav .navSubList li a {
+nav .navSubList .navSubItem a {
   padding: 5px 0 5px 12px;
   font-size: 14px;
   line-height: 14px;
 }
 
-nav .navSubList li a:hover {
+nav .navSubList .navSubItem a:hover {
   color: #F0386B;
 }
 
